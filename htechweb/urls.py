@@ -17,11 +17,14 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
-from .views import LandingPageView
+from .views import LandingPageView, AboutUsPageView, PartnersPageView, ServicesPageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', LandingPageView.as_view(), name='landing-page'),
+    path('about-us/', AboutUsPageView.as_view(), name='about-us'),
+    path('partners/', PartnersPageView.as_view(), name='partners'),
+    path('services/', ServicesPageView.as_view(), name='services'),
     
 ]
 
