@@ -14,3 +14,6 @@ class ServicesPageView(generic.TemplateView):
 
 class PartnersPageView(generic.TemplateView):
     template_name = "partners.html"
+
+class ContactUsPageView(generic.TemplateView):
+    template_name = "contact-us.html"
