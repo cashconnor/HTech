@@ -7,13 +7,13 @@
 <section class="text-gray-600 body-font">
     <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center ">
       <div data-aos="fade-right" class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">The Go-To Sanitization Supply Specialist
+        <h1 class="title-font lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">The Go-To Sanitization Supply Specialist
           <br class="hidden lg:inline-block">
         </h1>
         <p class="mb-8 leading-relaxed">A reliable, customer focused, Washington, D.C. based company with a proven track record of success while going above and beyond for their customers.</p>
         <div class="flex justify-center">
-          <button class="inline-flex text-white bg-blue-800 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg">Book a Consultation</button>
-          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Learn More</button>
+          <a href="{% url 'contact-us' %}" class="inline-flex text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg">Book a Consultation</a>
+          <a href="{% url 'services' %}" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Learn More</a>
         </div>
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -29,15 +29,16 @@
         <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Established In 1996, Heritage’s main focus is to provide quality products and innovation in this ever changing environment in sanitization, sterilization and green cleaning.</p>
       
       </div>
+      <div id="services" ></div>
       <div data-aos="fade-up" class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
         <h1 class="lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">Services</h1>
       </div>
       <div class="flex flex-wrap -m-4">
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div data-aos="fade-up" class="border border-gray-200 p-6 rounded-lg shadow-md">
-            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-slate-100 text-blue-700 mb-4">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-6 h-6" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z" clip-rule="evenodd" ></path>
               </svg>
             </div>
             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Sterilization Specialist</h2>
@@ -48,11 +49,9 @@
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div data-aos="fade-up" class="border border-gray-200 p-6 rounded-lg shadow-md">
-            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                <circle cx="6" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-slate-100 text-blue-700 mb-4">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-6 h-6" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path>
               </svg>
             </div>
             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Restrooms</h2>
@@ -63,10 +62,10 @@
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div data-aos="fade-up" class="border border-gray-200 p-6 rounded-lg shadow-md">
-            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-slate-100 text-blue-700 mb-4">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-6 h-6" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+                
               </svg>
             </div>
             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Disinfectant Supplies</h2>
@@ -77,12 +76,12 @@
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div data-aos="fade-up" class="border border-gray-200 p-6 rounded-lg shadow-md">
-            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-slate-100 text-blue-700 mb-4">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" ></path>
               </svg>
             </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Floor Care Supplies and Equipment</h2>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Floor Care</h2>
             <p class="leading-relaxed text-base">Vacuums and Scrubbers</p>
             <p class="leading-relaxed text-base">Buffers</p>
             <p class="leading-relaxed text-base">Extractors</p>
@@ -90,9 +89,9 @@
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div data-aos="fade-up" class="border border-gray-200 p-6 rounded-lg shadow-md">
-            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-slate-100 text-blue-700 mb-4">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path>
               </svg>
             </div>
             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Paper Products</h2>
@@ -103,7 +102,7 @@
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div data-aos="fade-up" class="border border-gray-200 p-6 rounded-lg shadow-md">
-            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-slate-100 text-blue-700 mb-4">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
@@ -115,7 +114,7 @@
           </div>
         </div>
       </div>
-      <button data-aos="zoom-in" class="flex mx-auto mt-16 text-white bg-blue-800 border-0 py-2 px-8 focus:outline-none hover:bg-blue-700 rounded text-lg">Book a Consultation</button>
+      <button data-aos="zoom-in" class="flex mx-auto mt-16 text-white bg-blue-600 border-0 py-2 px-8 focus:outline-none hover:bg-blue-700 rounded text-lg">Book a Consultation</button>
     </div>
 </section>
 <section class="text-gray-600 body-font">
@@ -201,7 +200,7 @@
   </div>
 </section>
 
-<div class="md:py-12 py-8 px-4"> 
+<div id="partners" class="md:py-12 py-8 px-4"> 
   <div class="flex flex-col items-center justify-center">
     <h1 class="lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">Our Trusted Partners</h1>
     <p class="text-base leading-normal text-center text-gray-600 mt-4 xl:w-1/2 w-10/12">We just got featured in the following magazines and it has been the most incredible journey. We work with the best fashion magazines across the world</p>
@@ -215,31 +214,31 @@
         <img src="{% static 'img/partners/essity-logo.png' %}" style="width:120px" alt="essity">
       </div>
       <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
-        <img src="{% static 'img/partners/georgia-pacific-logo.jpg' %}" style="width:120px" alt="amazon">
+        <img src="{% static 'img/partners/georgia-pacific-logo.jpg' %}" style="width:120px" alt="georgia-pacific">
       </div>
       <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
-       <img src="{% static 'img/partners/karcher-logo.png' %}" style="width:120px" alt="linkedIn">                
+       <img src="{% static 'img/partners/karcher-logo.png' %}" style="width:120px" alt="karcher">                
       </div>
       <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
-       <img src="{% static 'img/partners/kimberly-clark-logo.png' %}" style="width:120px" alt="blackberry">
+       <img src="{% static 'img/partners/kimberly-clark-logo.png' %}" style="width:120px" alt="kimberly-clark">
       </div>
       <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
-        <img src="{% static 'img/partners/revolution-bag-logo.png' %}" style="width:120px" alt="microsoft">
+        <img src="{% static 'img/partners/revolution-bag-logo.png' %}" style="width:120px" alt="revolution">
       </div>
       <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
-        <img src="{% static 'img/partners/rubbermaid-logo.svg' %}" style="width:120px" alt="amazon">
+        <img src="{% static 'img/partners/rubbermaid-logo.svg' %}" style="width:120px" alt="rubbermaid">
       </div>
       <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
-       <img src="{% static 'img/partners/scj-logo.png' %}" style="width:120px" alt="linkedIn">                
+       <img src="{% static 'img/partners/scj-logo.png' %}" style="width:120px" alt="sc-johnson">                
       </div>
       <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
-       <img src="{% static 'img/partners/spartan-logo.png' %}" style="width:120px" alt="blackberry">
+       <img src="{% static 'img/partners/spartan-logo.png' %}" style="width:120px" alt="spartan">
       </div>
       <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
-        <img src="{% static 'img/partners/tenant-logo.png' %}" style="width:120px" alt="microsoft">
+        <img src="{% static 'img/partners/tenant-logo.png' %}" style="width:120px" alt="tennant">
       </div>
       <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
-        <img src="{% static 'img/partners/Brady-logo.jpg' %}" style="width:120px" alt="microsoft">
+        <img src="{% static 'img/partners/Brady-logo.jpg' %}" style="width:120px" alt="brady">
       </div>
     </div>
   </div>
