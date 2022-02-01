@@ -24,12 +24,12 @@
 
 <section class="text-gray-600 body-font">
     <div class="container px-5 py-2 mx-auto">
-      <div data-aos="fade-left" class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+      <div data-aos="fade-left" style="padding-bottom:0px" class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
         
         <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Established In 1996, Heritage’s main focus is to provide quality products and innovation in this ever changing environment in sanitization, sterilization and green cleaning.</p>
       
       </div>
-      <div style="padding-top:30px" id="services" ></div>
+      <div id="services" style="padding-top:180px" ></div>
       <div data-aos="fade-up" class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
         <h1 class="lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">Services</h1>
       </div>
@@ -119,7 +119,7 @@
     </div>
 </section>
 <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
+  <div class="container px-5 py-24 mx-auto" style="padding-bottom:0">
     <div data-aos="fade-left" class="text-center mb-10">
       <h1 class="lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">Certifications</h1>
       <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto"></p>
@@ -201,10 +201,10 @@
   </div>
 </section>
 
-<div id="partners" class="md:py-12 py-8 px-4"> 
+<div id="partners" style="padding-top:180px"class="md:py-12 py-8 px-4"> 
   <div class="flex flex-col items-center justify-center">
     <h1 class="lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">Our Trusted Partners</h1>
-    <p class="text-base leading-normal text-center text-gray-600 mt-4 xl:w-1/2 w-10/12">We just got featured in the following magazines and it has been the most incredible journey. We work with the best fashion magazines across the world</p>
+    <p class="text-base leading-normal text-center text-gray-600 mt-4 xl:w-1/2 w-10/12">We partner with the best industry leaders in cleaning supply</p>
   </div>
   <div class="flex items-center justify-center mt-10">
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 w-8/12 justify-items-center">
@@ -245,11 +245,11 @@
   </div>
 </div>
 
-<section style="padding-top:80px"  id="about-us" class="text-gray-600 body-font">
+<section style="padding-top:180px;"  id="about-us" class="text-gray-600 body-font">
   <div data-aos="fade-up" class="flex flex-wrap w-full mb-2 flex-col items-center text-center">
     <h1 class="lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">About Us</h1>
     <p class="text-base leading-normal text-center text-gray-600 mt-4 xl:w-1/2 w-10/12">We never lose sight of our most important objective: to meet the needs of our customer, today and tomorrow.</p>
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+  <div style="padding-bottom:20px"class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div data-aos="fade-right"class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
       <img class="object-cover object-center rounded" alt="hero" src="{% static 'img/about-us-business.jpg' %}">
     </div>
@@ -274,7 +274,7 @@
   </div>
 </section> -->
 
-<section id="contact-us" style="padding-top:40px"  class="text-gray-600 body-font relative">
+<section id="contact-us" style="padding-top:180px"  class="text-gray-600 body-font relative">
   <div class="flex flex-col items-center justify-center">
     <h1 class="lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">Contact Us</h1>
   </div>
@@ -318,7 +318,7 @@
 <a onclick="topFunction()" id="scrollbtn" title="Go to top">Top</a>
 <script>
   var mybutton = document.getElementById("scrollbtn");
-
+  var myheader = document.getElementById("header")
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function() {scrollFunction()};
 
@@ -336,4 +336,5 @@
   document.documentElement.scrollTop = 0;
   }
 </script>
+
 {% endblock %}
