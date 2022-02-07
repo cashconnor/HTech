@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import environ
 import os
+import django_heroku
 
 env = environ.Env(
     # set casting, default value
@@ -158,3 +159,6 @@ CRISPY_TEMPLATE_PACK = "tailwind"
 DEFAULT_FROM_EMAIL = 'ccc262@cornell.edu'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
