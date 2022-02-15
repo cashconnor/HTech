@@ -115,7 +115,7 @@
         </div>
       </div>
       <div class="flex justify-center">
-        <a href="#contact-us" class="inline-flex text-white mt-8 bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg">Book a Consultation</a>
+        <a href="{% url 'contact-us' %}" class="inline-flex text-white mt-8 bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg">Book a Consultation</a>
     </div>
 </section>
 <section class="text-gray-600 body-font">
@@ -206,8 +206,14 @@
     <h1 class="lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">Our Trusted Partners</h1>
     <p class="text-base leading-normal text-center text-gray-600 mt-4 xl:w-1/2 w-10/12">We partner with the best industry leaders in cleaning supply</p>
   </div>
+  <div class="flex justify-center">
+    <a href="https://www.sfreedman.com/" class="inline-flex text-white mt-8 bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg">View Products</a>
+  </div> 
   <div class="flex items-center justify-center mt-10">
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 w-8/12 justify-items-center">
+      <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
+        <a href="https://www.sfreedman.com/"><img src="{% static 'img/partners/sfreedman-logo.png' %}" style="width:200px" alt="sfreedman"></a>
+       </div>
       <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
        <a href="https://www.betco.com/products"><img src="{% static 'img/partners/betco-logo.jpg' %}" style="width:120px" alt="betco"></a>
       </div>
@@ -238,9 +244,9 @@
       <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
         <a href="https://www.tennantco.com/en_us.html"><img src="{% static 'img/partners/tenant-logo.png' %}" style="width:120px" alt="tennant"></a>
       </div>
-      <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
+      <!-- <div data-aos="fade-left" class="bg-white md:w-48 w-full h-24 rounded border-solid border-2 border-gray-200 flex items-center justify-center">
         <a href="https://www.bradyindustries.com/"><img src="{% static 'img/partners/Brady-logo.jpg' %}" style="width:120px" alt="brady"></a>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
