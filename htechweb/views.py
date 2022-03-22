@@ -6,6 +6,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.urls import reverse
+from django.core.mail import send_mail
 
 
 class LandingPageView(generic.TemplateView):
@@ -44,11 +45,15 @@ def contactView(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             name = form.cleaned_data['name']
-            subject = "Webform submission"
+            subject = "H-Tech Website Submission"
             email = form.cleaned_data['email']
             message = form.cleaned_data['message']
             try:
-                send_mail(subject, message, email, ['admin@example.com'])
+                send_mail(
+                    subject + ' from ' + name, 
+                    message, 
+                    email, 
+                    ['ccc262@cornell.edu'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('landing-page')
