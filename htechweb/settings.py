@@ -159,13 +159,13 @@ CRISPY_TEMPLATE_PACK = "tailwind"
 
 DEFAULT_FROM_EMAIL = 'ccc262@cornell.edu'
 
-EMAIL_USE_TLS = True
+EMAIL_USE_TLS = False
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.htech-inc.com'
-EMAIL_HOST_USER = 'ecom@htech-inc.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'connor.cash1@gmail.com'
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
-EMAIL_PORT = 587
-EMAIL_USE_SSL = False
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
 
 
 DEBUG_PROPAGATE_EXCEPTIONS = True
