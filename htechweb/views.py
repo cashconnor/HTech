@@ -53,8 +53,11 @@ def contactView(request):
                     subject + ' from ' + name, 
                     message, 
                     email, 
-                    ['ccc262@cornell.edu'])
+                    ['info@htech-inc.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('landing-page')
     return render(request, "contact-us.html", {'form': form})
+
+def orderView(request):
+    return render(request, "order.html")

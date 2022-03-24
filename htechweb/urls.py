@@ -17,7 +17,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
-from .views import LandingPageView, AboutUsPageView, PartnersPageView, ServicesPageView, contactView
+from .views import LandingPageView, AboutUsPageView, PartnersPageView, ServicesPageView, contactView, orderView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,6 +26,7 @@ urlpatterns = [
     path('partners/', PartnersPageView.as_view(), name='partners'),
     path('services/', ServicesPageView.as_view(), name='services'),
     path('contact-us/', contactView, name='contact-us'),
+    path('order/', orderView, name='order'),
 ]
 
 if settings.DEBUG:
